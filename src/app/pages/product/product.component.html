@@ -1,0 +1,12 @@
+<div class="container"> 
+  <div class="col">
+      <ul>
+        <li *ngFor="let producto of productos">
+          <a routerLink="" (click)="showProducto(producto.id)"> 
+            {{ producto.name.first }} {{ producto.name.last }} 
+      
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
